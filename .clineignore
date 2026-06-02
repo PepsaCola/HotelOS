@@ -1,0 +1,34 @@
+# Директорії залежностей (Найважливіше!)
+node_modules/
+jspm_packages/
+web_modules/
+vendor/
+
+# Папки збірки та кешу
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+
+# Системні папки та контроль версій
+.git/
+.DS_Store
+
+# Логи та бази даних (можуть важити мегабайти)
+*.log
+*.sqlite
+npm-debug.log*
+
+# Лок-файли (запобігає читанню гігантських JSON/YAML)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Медіа-файли та архіви
+*.png
+*.jpg
+*.svg
+*.mp4
+*.pdf

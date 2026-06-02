@@ -1,0 +1,19 @@
+# 1. CORE DIRECTIVES (Головні вказівки)
+- Minimize token consumption at all costs. Every token saved extends our session budget.
+- Be extremely concise. Do not use pleasantries, greetings, or conversational fluff.
+- Do not explain code changes unless explicitly asked by the user.
+
+# 2. CODE MODIFICATION (Зміни в коді)
+- NEVER rewrite an entire file if only a few lines are changing. Use precise search-and-replace.
+
+# 3. CONTEXT MANAGEMENT (Керування контекстом)
+- NEVER read large files (>200 lines) entirely. Read specific line ranges first.
+- Avoid running commands that output massive text to the console.
+
+# 4. SUB-AGENTS USAGE (Субагенти)
+- For heavy tasks like reading external documentation or analyzing test suites, ALWAYS spawn a SUB-AGENT.
+- Instruct the sub-agent to return ONLY a compact, max 200-token summary back to this main chat.
+
+# 5. SEARCH & INVESTIGATION (Пошук по проекту)
+- Restrict file searches to specific directories (e.g., src/, app/). Do not scan the entire workspace.
+- Use precise keywords when searching code to avoid listing hundreds of irrelevant files.
